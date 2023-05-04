@@ -9,6 +9,7 @@ body {
   height: fit-content;
   width: fit-content;
   margin: auto;
+  margin-top: 20vh;
 }
 
 .container > div {
@@ -35,6 +36,9 @@ label {
 }
 
 @media screen and (max-width: 800px) {
+  .container {
+    margin-top: 0;
+  }
   .container > div {
     flex-direction: column-reverse;
   }
@@ -54,12 +58,15 @@ label {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     .container {
-      width: 100vw;
+      margin: auto;
       border: none;
     }
 
+    .img {
+      object-fit: cover;
+    }
     label {
       flex-direction: column;
     }
